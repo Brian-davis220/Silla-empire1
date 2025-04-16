@@ -1,88 +1,84 @@
 body {
     background-color: bisque;
 }
+
+/* Lobster Two Fonts */
 @font-face {
-    font-family: 'Lobster';
-    src: url(Lobster_Two/LobsterTwo-BoldItalic.ttf);
+    font-family: 'LobsterTwo-BoldItalic';
+    src: url('Lobster_Two/LobsterTwo-BoldItalic.ttf');
 }
 @font-face {
-    font-family: 'Lobster2';
-    src: url(Lobster_Two/LobsterTwo-Bold.ttf);
+    font-family: 'LobsterTwo-Bold';
+    src: url('Lobster_Two/LobsterTwo-Bold.ttf');
 }
 @font-face {
-    font-family: 'Lobster3';
-    src:url(Lobster_Two/LobsterTwo-Italic.ttf) ;
-}
-@font-face {
-    font-family: 'Rock';
-    src: url(Dancing_Script/DancingScript-VariableFont_wght.ttf);
-}
-@font-face {
-    font-family: 'Lobsterf';
-    src: url(Dancing_Script/static/DancingScript-Regular.ttf);
+    font-family: 'LobsterTwo-Italic';
+    src: url('Lobster_Two/LobsterTwo-Italic.ttf');
 }
 
-#Heading{
-    font-family: 'Lobster';
+/* Dancing Script Variable and Static */
+@font-face {
+    font-family: 'DancingScript';
+    src: url('Dancing_Script/DancingScript-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+}
+@font-face {
+    font-family: 'DancingScript-Regular';
+    src: url('Dancing_Script/static/DancingScript-Regular.ttf');
+}
+
+/* Font usage */
+#Heading {
+    font-family: 'LobsterTwo-BoldItalic';
     text-align: center;
     border-image: linear-gradient(to right, #4c4c4c, #e3e3e5) 1;
-    /* animation: slideGradient 3s infinite linear; */
     border-bottom: 8px solid;
     border-top: 8px solid;
 }
-.StoryHead{
+
+.StoryHead {
     text-align: center;
-    font-family: 'Lobster2';
-    /* color: white; */
+    font-family: 'LobsterTwo-Bold';
 }
-.Reporter{
-    font-family: 'Lobster3';
+
+.Reporter {
+    font-family: 'LobsterTwo-Italic';
     text-align: center; 
     border-image: linear-gradient(to right, #4c4c4c, #e3e3e5) 1;
-    /* animation: slideGradient 3s infinite linear; */
     border-bottom: 8px solid;
 }
-.articles1{
+
+.articles1 {
     column-count: 2;
     column-gap: 20px;
     border-image: linear-gradient(to right, #4c4c4c, #e3e3e5) 1;
-    /* animation: slideGradient 3s infinite linear; */
     border-bottom: 8px solid;
 }
-.hOfOne1{
-    font-family: 'Lobster2';
+
+.hOfOne1,
+.hOfTwo1,
+.hOfOne2,
+.hOfTwo2,
+.hOfTwo3 {
+    font-family: 'LobsterTwo-Bold';
 }
-.intro{
-    font-family: 'Rock';
+
+.intro {
+    font-family: 'DancingScript';
 }
-.hOfTwo1{
-    font-family: 'Lobster2';
-}
-.articles2{
-    column-count: 2;
-    column-gap: 20px;
-    border-image: linear-gradient(to right, #4c4c4c, #e3e3e5) 1;
-    /* animation: slideGradient 3s infinite linear; */
-    border-bottom: 8px solid;
-}
-.hOfOne2{
-    font-family: 'Lobster2';
-}
-.quote{
+
+.quote {
     font-style: italic;
 }
-.hOfTwo2{
-    font-family: 'Lobster2';
-}
-.hOfTwo3{
-    font-family: 'Lobster2';
-}
-.img{
+
+.img {
     float: right;
 }
-h5{
+
+h5 {
     text-align: center;
 }
+
 @media (max-width: 768px) {
     .articles1, .articles2 {
         column-count: 1;
